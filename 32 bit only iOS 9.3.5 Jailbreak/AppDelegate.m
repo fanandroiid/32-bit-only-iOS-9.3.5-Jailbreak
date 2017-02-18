@@ -20,8 +20,30 @@
     return YES;
 }
 
+- (UIStoryboard *)grabStoryboard {
+    
+    // determine screen size
+    int screenHeight = [UIScreen mainScreen].bounds.size.height;
+    UIStoryboard *storyboard;
+    
+    switch (screenHeight) {
+            
+            // iPhone 4s
+        case 480:
+            storyboard = [UIStoryboard storyboardWithName:@"Main-4s" bundle:nil];
+            break;
+            
+            // iPhone 5/iPod 5 support
+        case 568:
+            storyboard = [UIStoryboard storyboardWithName:@"Main-5" bundle:nil];
+            break;
+            
+        default:
+            // iPad
+            storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            break;
 
-- (void)applicationWillResignActive:(UIApplication *)application {
+            - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
@@ -54,7 +76,7 @@
 
 @synthesize persistentContainer = _persistentContainer;
 
-- (NSPersistentContainer *)persistentContainer {
+- (NSPersistentContainer *) persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
@@ -95,4 +117,6 @@
     }
 }
 
-@end
+            @end
+            
+
