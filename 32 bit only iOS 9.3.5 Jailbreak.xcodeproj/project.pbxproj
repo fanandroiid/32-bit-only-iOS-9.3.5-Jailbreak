@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA52CAF21E57F26700A42E58 /* Main4s.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA52CAF01E57F26700A42E58 /* Main4s.storyboard */; };
-		AA52CAF41E57F3EE00A42E58 /* Main5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA52CAF31E57F3EE00A42E58 /* Main5.storyboard */; };
+		AA52CAF61E57F5FE00A42E58 /* StoryboardiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA52CAF51E57F5FE00A42E58 /* StoryboardiPhone.storyboard */; };
 		AA6A818C1E53EBE600F3C71B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6A818B1E53EBE600F3C71B /* main.m */; };
 		AA6A818F1E53EBE600F3C71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6A818E1E53EBE600F3C71B /* AppDelegate.m */; };
 		AA6A81921E53EBE600F3C71B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6A81911E53EBE600F3C71B /* ViewController.m */; };
@@ -38,8 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA52CAF11E57F26700A42E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main4s.storyboard; sourceTree = "<group>"; };
-		AA52CAF31E57F3EE00A42E58 /* Main5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main5.storyboard; sourceTree = "<group>"; };
+		AA52CAF51E57F5FE00A42E58 /* StoryboardiPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardiPhone.storyboard; path = ../StoryboardiPhone.storyboard; sourceTree = "<group>"; };
 		AA6A81871E53EBE600F3C71B /* 32 bit only iOS 9.3.5 Jailbreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32 bit only iOS 9.3.5 Jailbreak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6A818B1E53EBE600F3C71B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA6A818D1E53EBE600F3C71B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,8 +110,7 @@
 				AA6A81901E53EBE600F3C71B /* ViewController.h */,
 				AA6A81911E53EBE600F3C71B /* ViewController.m */,
 				AA6A81931E53EBE600F3C71B /* Main.storyboard */,
-				AA52CAF01E57F26700A42E58 /* Main4s.storyboard */,
-				AA52CAF31E57F3EE00A42E58 /* Main5.storyboard */,
+				AA52CAF51E57F5FE00A42E58 /* StoryboardiPhone.storyboard */,
 				AA6A81991E53EBE700F3C71B /* Assets.xcassets */,
 				AA6A819B1E53EBE700F3C71B /* LaunchScreen.storyboard */,
 				AA6A819E1E53EBE700F3C71B /* Info.plist */,
@@ -258,10 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA52CAF21E57F26700A42E58 /* Main4s.storyboard in Resources */,
 				AA6A819D1E53EBE700F3C71B /* LaunchScreen.storyboard in Resources */,
-				AA52CAF41E57F3EE00A42E58 /* Main5.storyboard in Resources */,
 				AA6A819A1E53EBE700F3C71B /* Assets.xcassets in Resources */,
+				AA52CAF61E57F5FE00A42E58 /* StoryboardiPhone.storyboard in Resources */,
 				AA6A81951E53EBE600F3C71B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,14 +322,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA52CAF01E57F26700A42E58 /* Main4s.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA52CAF11E57F26700A42E58 /* Base */,
-			);
-			name = Main4s.storyboard;
-			sourceTree = "<group>";
-		};
 		AA6A81931E53EBE600F3C71B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
