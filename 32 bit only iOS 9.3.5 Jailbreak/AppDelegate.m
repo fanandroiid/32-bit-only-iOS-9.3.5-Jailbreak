@@ -18,30 +18,34 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
-}
+    
+    - (UIStoryboard *)grabStoryboard {
+        
+        // determine screen size
+        int screenHeight = [UIScreen mainScreen].bounds.size.height;
+        UIStoryboard *storyboard;
+        
+        switch (screenHeight) {
+                
+                // iPhone 4s
+            case 480:
+                storyboard = [UIStoryboard storyboardWithName:@"Main4s" bundle:nil];
+                break;
+                
+                // iPhone 5/iPod 5 support
+            case 568:
+                storyboard = [UIStoryboard storyboardWithName:@"Main5" bundle:nil];
+                break;
+                
+            default:
+                // iPad
+                storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                break;
+        }
+        
+        return storyboard;
 
-- (UIStoryboard *)grabStoryboard {
-    
-    // determine screen size
-    int screenHeight = [UIScreen mainScreen].bounds.size.height;
-    UIStoryboard *storyboard;
-    
-    switch (screenHeight) {
-            
-            // iPhone 4s
-        case 480:
-            storyboard = [UIStoryboard storyboardWithName:@"Main-4s" bundle:nil];
-            break;
-            
-            // iPhone 5/iPod 5 support
-        case 568:
-            storyboard = [UIStoryboard storyboardWithName:@"Main-5" bundle:nil];
-            break;
-            
-        default:
-            // iPad
-            storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            break;
+}
 
             - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -119,4 +123,6 @@
 
             @end
             
+    
+    @end
 
