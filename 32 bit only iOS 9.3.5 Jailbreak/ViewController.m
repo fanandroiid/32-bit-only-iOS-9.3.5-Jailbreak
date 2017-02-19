@@ -25,25 +25,6 @@
     // Dispose of any resources that can be recreated.
 
 
-}
-- (IBAction)gobuttontapped
-{
-NSString *title = @"Exploit installed!";
-NSString *message = @"Please reboot your Device";
-NSString *okText = @"OK";
-    
-UIAlertController *alert = [UIAlertController alertControllerWithTitle:
-    title message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okButton = [UIAlertAction actionWithTitle:okText style:
-                               UIAlertActionStyleCancel handler:nil];
-    [alert addAction:okButton];
-    
-    [self presentViewController:alert animated:YES completion:nil];
-
-
-
-
-
 
 
 }
